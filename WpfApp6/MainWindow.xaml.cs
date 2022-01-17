@@ -23,6 +23,22 @@ namespace WpfApp6
         public MainWindow()
         {
             InitializeComponent();
+            Weather();
         }
+
+
+        public void Weather()
+        {
+            WeatherControl weather = new WeatherControl();
+            weather.Temper = 30;
+            weather.Direction = "Ю-З";
+            weather.Precipitate = "Снег";
+            weather.Speed = 20;
+            weather.ShowWeather();
+        }
+
     }
+
+
+   
 }
